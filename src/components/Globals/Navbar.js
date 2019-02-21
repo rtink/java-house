@@ -29,9 +29,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav 
-        className='navbar navbar-expand-sm navbar-dark bg-dark'
-      >
+      <nav className='navbar navbar-expand-sm navbar-dark bg-dark fixed-top'>
         <Link to='/' className='navbar-brand'>
           <img src={java1} alt='java1' />
           {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
