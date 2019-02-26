@@ -25,13 +25,13 @@ module.exports = {
         host: `preview.contentful.com`,
       },
     },
-    // {
-    //   resolve: 'gatsby-source-contentful',
-    //   options: {
-    //     spaceId: 'sqlkeps1ach1',
-    //     accessToken: '7130e4f301f2ab2916f0a144e46f3cc2cea050f54977d97856edc7e666830bbd'
-    //   },
-    // },
+    {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey: process.env.SNIPCART_API,
+        autopop: true
+			}
+		},
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
